@@ -1,0 +1,270 @@
+*{    
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    font-size: 1.05em;
+    padding: 20px 0px;
+    color: #333333;
+}
+button{
+    background-color:#f38323;
+    border: none;
+    color: white;
+    font-size: 1.05em;
+    font-weight: 700;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 100px;
+    margin-top: 10px;
+}
+button:hover{
+    background-color:rgb(211, 112, 26);
+    cursor: pointer;
+}
+h2{
+    font-size: 2em;
+}
+h2, h3{
+    color: #333333;
+    padding-top: 20px;
+}
+
+
+
+/*------------------------------------*/
+/*----------------NAVBAR--------------*/
+/*------------------------------------*/
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 25px 80px;
+}
+.logo-img{
+    width: 100px;
+}
+.navbar-items{
+    height: 100%;
+}
+.navbar-items ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+.navbar-items  li a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.05em;
+    color: #333333;
+    padding: 15px;
+    font-weight: 600;
+}
+.navbar-items li:hover{
+    cursor: pointer;
+}
+.navbar-items  li a:hover{
+    font-weight: 700;
+}
+.toggle-button{
+    position: absolute;
+    top: 35px;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #333333;
+    border-radius: 10px;
+}
+
+
+
+/*------------------------------------*/
+/*-----------APRESENTAÇÃO-------------*/
+/*------------------------------------*/
+.container-apresentacao{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+.content{
+    text-align: center;
+    width: 800px;
+}
+.content h2{
+    color: white;
+}
+.content p{
+    color: white;
+}
+
+
+
+/*------------------------------------*/
+/*--------------TITULOS---------------*/
+/*------------------------------------*/
+.container-titulos{
+    padding: 80px;
+}
+.boxes{
+    display: flex;
+    justify-content: center;    
+}
+.box{
+    text-align: center;
+    width:100%;
+    margin: 15px;
+}
+
+
+
+/*------------------------------------*/
+/*-------------SOBRE NÓS--------------*/
+/*------------------------------------*/
+.container-sobrenos{
+    background-color: #f1f3f4;  
+    padding: 80px;
+    display: flex;   
+}
+.sobrenos{
+    width: 65%;
+    display: inline;
+    align-self: center;
+}
+.imgsobreclass{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+.imgsobre{
+    max-width: 450px;
+    width: 100%;
+}
+
+
+
+/*------------------------------------*/
+/*-----------------BLOG---------------*/
+/*------------------------------------*/
+.container-blog{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.container-blog h2{
+    text-align: center;
+}
+.posts{
+    display: flex;
+    justify-content: space-between;
+}
+.post{
+    padding-top: 20px;
+    margin: 10px;
+}
+.post-text{
+    margin-top: -5px;
+    background-color: #f1f3f4;
+    padding: 20px;
+}
+.post-text h3 {
+    padding: 0px;
+}
+.post-text p{
+    padding-top: 10px;
+}
+
+
+
+/*------------------------------------*/
+/*---------------FOOTER---------------*/
+/*------------------------------------*/
+footer{
+    background-color: #1d1d1d;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+footer p{
+    color: white;
+}
+
+
+
+/*--------------------------------------------*/
+/*---------------RESPONSIVIDADE---------------*/
+/*--------------------------------------------*/
+@media (max-width: 768px){
+    .boxes{
+        display: inline;
+        justify-content: center;    
+    }
+    .sobrenos{
+        width: 100%;
+        display: inline;
+        align-self: center;
+    }
+    .imgsobreclass, .imgsobre{
+        display: none;
+    }
+    .posts{
+        display: inline;
+    }
+    .box{
+        margin:0px;
+    }
+
+}
+
+
+
+/*-----------------------------------------------*/
+/*-------------RESPONSIVIDADE MEMU---------------*/
+/*-----------------------------------------------*/
+@media (max-width: 992px){
+    .toggle-button{
+        display: flex;
+    }    
+    .navbar-items{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-items ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-items li{
+        text-align: center;
+    }
+    .navbar-items li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-items.active{
+        display: flex;
+    }
+
+}
+

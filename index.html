@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="logo" class="logo-img"/>
+        </div>
+
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+
+        <div class="navbar-items">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SOBRE</a></li>
+                <li><a href="#">SERVIÇOS</a></li>
+                <li><a href="#">PRODUTOS</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTATO</a></li>
+                <li><a href='#'><img src="images/phone-alt-solid.svg" width="13px"> (11)97894-5612</a></li>
+            </ul> 
+        </div>           
+    </nav>
+
+
+
+    <section class="container-apresentacao">
+        <div class="content">
+            <h2>SEJA BEM-VINDO</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel ligula egestas, convallis ipsum in, ullamcorper arcu. Nunc ultrices ipsum lectus, eget vulputate ante pellentesque elementum.</p>
+            <button>FALE CONOSCO</button>
+        </div>
+    </section>
+
+
+
+    <section class="container-titulos">
+        <div class="boxes">
+            <div class="box">
+                <img src="images/imgtitulo.png" width="100px">
+                <h3>Título</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adispiscing elit. Quas debitls, fugiant voluptatibus hic atque temporibus.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/imgtitulo.png" width="100px">
+                <h3>Título</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adispiscing elit. Quas debitls, fugiant voluptatibus hic atque temporibus.</p>
+            </div>
+            
+            <div class="box">
+                <img src="images/imgtitulo.png" width="100px">
+                <h3>Título</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adispiscing elit. Quas debitls, fugiant voluptatibus hic atque temporibus.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/imgtitulo.png" width="100px">
+                <h3>Título</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adispiscing elit. Quas debitls, fugiant voluptatibus hic atque temporibus.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="container-sobrenos">
+        <div class="sobrenos">
+            <h2>SOBRE NÓS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempus tincidunt libero, vitae rhoncus ipsum sollicitudin a. Vestibulum efficitur mattis elit eget feugiat. Ut ac nisi sit amet augue tristique tincidunt vulputate eu massa. Mauris lacus justo, posuere at risus viverra, dictum placerat leo. Nullam interdum felis ac nunc porta.</p>
+            <button>SAIBA MAIS</button>
+        </div>
+
+        <div class="imgsobreclass">
+            <img src="images/sobre.png" class="imgsobre"/>
+        </div>
+    </section>
+
+    
+    
+    <section class="container-blog">
+        <h2>ÚLTIMAS DO BLOG</h2>
+        <div class="posts">
+            <div class="post">
+                <img src="images/blog.jpg" width="100%" class="img-post"/>
+                <div class="post-text">
+                    <h3>Título do post</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente assumenda voluptas aperiam vitae obcaecati, ratione sit optio laudantium harum.</p>
+                </div>                
+            </div>
+            
+            <div class="post">
+                <img src="images/blog.jpg" width="100%" class="img-post"/>
+                <div class="post-text">
+                    <h3>Título do post</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente assumenda voluptas aperiam vitae obcaecati, ratione sit optio laudantium harum.</p>
+                </div>                
+            </div>
+            
+            <div class="post">
+                <img src="images/blog.jpg" width="100%" class="img-post"/>
+                <div class="post-text">
+                    <h3>Título do post</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente assumenda voluptas aperiam vitae obcaecati, ratione sit optio laudantium harum.</p>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <p>2021 - TODOS OS DIREITOS RESERVADOS</p>
+    </footer>
+
+
+
+    <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0];
+        const navbarItems = document.getElementsByClassName('navbar-items')[0];
+
+        toggleButton.addEventListener('click', ()=>{
+            navbarItems.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
